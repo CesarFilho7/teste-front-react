@@ -1,0 +1,16 @@
+.card{
+    height: 97%;
+}
+
+.valor{
+    /* text-align: right; */
+    font-size: 28px;
+}
+
+.header img{
+    height: 220px;
+}
+
+.btn{
+    text-align: center !important;
+}
