@@ -4,13 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Dashboard from './components/Dashboard';
 // import MinhasCompras from './components/MinhasCompras';
 // import Routes from './Routes';
-import DetalhesProdutos from './components/DetalhesProduto';
+import MinhasCompras from './components/MinhasCompras';
 
 
 function App() {
   return (
     <div className="">
-      <DetalhesProdutos/>
+      <MinhasCompras/>
     </div>
   );
 }

@@ -9,6 +9,6 @@ export default () => (
     <Switch>
         <Route path='/compras' component={MinhasCompras}/>
         <Route path='/dashboard' component={Dashboard}/>
-        <Route path='/compras/:idCompra' component={DetalhesProdutos}/>
+        <Route exact path='/compras/:id' component={DetalhesProdutos}/>
     </Switch>
 )
