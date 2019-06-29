@@ -44,6 +44,7 @@ class Dashboard extends Component {
     return (
       <div className="container">
         <Header/>
+        <Routes/>
         <br/>   
         <div className="row">
             {produtosCard}
