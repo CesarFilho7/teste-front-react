@@ -6,7 +6,7 @@ class ProdutosCards extends Component {
     render() {
         return (
             <div className="col-md-12 col-lg-6 col-xl-3">
-                <div className="card">
+                <div className="card text-center">
                     <div className="header">
                         <img src={this.props.imagem} className="card-img-top" alt="..."/>
                     </div>

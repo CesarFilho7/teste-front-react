@@ -3,7 +3,6 @@
 }
 
 .valor{
-    /* text-align: right; */
     font-size: 28px;
 }
 
@@ -11,6 +10,7 @@
     height: 220px;
 }
 
-.btn{
-    text-align: center !important;
+.col p{
+    font-size: 17px;
+    line-height: 0.5;
 }

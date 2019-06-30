@@ -20,7 +20,6 @@ class MinhasCompras extends Component {
     axios.get('https://bannetcompras.herokuapp.com/compras')
     .then(res => {
       this.setState({produtos: res.data})
-       console.log(this.state.produtos)
     })
     .catch(function (error) {
       console.log(":(")

@@ -20,8 +20,6 @@ class Dashboard extends Component {
     axios.get('https://bannetloja.herokuapp.com/produtos')
     .then(res => {
       this.setState({produtos: res.data})
-      console.log(this.state.produtos)
-
     })
     .catch(function (error) {
       console.log(":( ")

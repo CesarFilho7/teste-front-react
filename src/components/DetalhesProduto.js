@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Header from './Header';
+import '../style.css';
 
 
 class DetalhesProdutos extends Component {
@@ -23,12 +24,12 @@ class DetalhesProdutos extends Component {
       this.setState({produtos: res.data})
       this.setState({produto: res.data.produto})
       this.setState({dimensoes: res.data.produto.dimensoes})
-       console.log(this.state.produtos)
     })
     .catch(function (error) {
       console.log(":(")
     })
   }
+  
 
   render() {
     return (
@@ -41,14 +42,20 @@ class DetalhesProdutos extends Component {
             <div className="col">
                 <br/>
                 <br/>
-                <h3>Nome: {this.state.produto.nome}</h3>
-                {/* <p>{this.state.produto.nome}</p> */}
-                <h3>Valor: {this.state.produto.valor}</h3>
-                <h3>Data da Compra: {this.state.produtos.dataCompra}</h3>
-                <h3>Peso: {this.state.produto.peso}</h3>
-                <h3>Altura: {this.state.dimensoes.altura}</h3>
-                <h3>Comprimento: {this.state.dimensoes.comprimento}</h3>
-                <h3>Largura: {this.state.dimensoes.largura}</h3>
+                <h4>Nome:</h4>
+                <p>{this.state.produto.nome}</p>
+                <h4>Valor:</h4>
+                <p>{this.state.produto.valor}</p>
+                <h3>Data da Compra:</h3>
+                <p>{this.state.produtos.dataCompra}</p>
+                <h3>Peso:</h3>
+                <p>{this.state.produto.peso}</p>
+                <h3>Altura:</h3>
+                <p>{this.state.dimensoes.altura}</p>
+                <h3>Comprimento:</h3>
+                <p>{this.state.dimensoes.comprimento}</p>
+                <h3>Largura:</h3>
+                <p>{this.state.dimensoes.largura}</p>
             </div>
         </div>
       </div>
