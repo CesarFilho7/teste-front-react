@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProdutosTable from './ProdutosTable';
 import axios from 'axios';
+import Header from './Header';
 
 class MinhasCompras extends Component {
   constructor(props) {
@@ -29,7 +30,8 @@ class MinhasCompras extends Component {
   produtosList() {
     if (this.state.produtos) {
         return this.state.produtos.map((produtos =>
-            <ProdutosTable key={produtos.id} nome={produtos.produto.nome} descricao={produtos.produto.descricao} dataCompra={produtos.dataCompra}/>
+            <ProdutosTable key={produtos.id} nome={produtos.produto.nome} id={produtos.id}
+             descricao={produtos.produto.descricao} dataCompra={produtos.dataCompra}/>
         ));
     } else {
         return
@@ -42,6 +44,9 @@ class MinhasCompras extends Component {
     
     return (
     <div className="container">
+        <Header/>
+        <br/>
+        <br/>
         <h3>{this.state.titulo}</h3>
         <br/>
         <table className="table">

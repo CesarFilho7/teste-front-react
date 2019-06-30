@@ -7,8 +7,9 @@ import DetalhesProdutos from './components/DetalhesProduto';
 
 export default () => (
     <Switch>
+        <Route exact path='/' component={Dashboard}/>
         <Route path='/compras' component={MinhasCompras}/>
         <Route path='/dashboard' component={Dashboard}/>
-        <Route exact path='/compras/:id' component={DetalhesProdutos}/>
+        <Route exact path='/compras:id' component={DetalhesProdutos}/>
     </Switch>
 )

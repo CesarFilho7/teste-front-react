@@ -6,7 +6,7 @@ class ProdutosTable extends Component {
     return (
       <tr> 
         <td>
-        <Link to={`/compras/${this.props.id}`}>
+        <Link to={`/compras${this.props.id}`}>
           {this.props.nome}
         </Link>
         </td>

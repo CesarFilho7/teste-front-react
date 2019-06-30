@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ProdutosCards from '../common/ProdutosCards';
 import axios from 'axios';
 import Header from './Header';
-import Routes from '../Routes';
 
 
 class Dashboard extends Component {
@@ -44,7 +43,6 @@ class Dashboard extends Component {
     return (
       <div className="container">
         <Header/>
-        <Routes/>
         <br/>   
         <div className="row">
             {produtosCard}
